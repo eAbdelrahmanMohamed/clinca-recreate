@@ -1,0 +1,753 @@
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-variant-caps: titling-caps;
+        }
+        
+        .App {
+            width: 100%;
+            margin: auto;
+            height: 100vh;
+            /*background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.qrtfdU3GdKh3U-wl_O1EpwHaE_%26pid%3DApi&f=1');*/
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            /*animation: bgcolorchange normal infinite 10s;*/
+        }
+        
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            position: relative;
+        }
+        
+        .Nav,
+        .Nav a {
+            /*text-align: center;*/
+            display: flex;
+            justify-content: space-around;
+            align-items: baseline;
+            padding: 15px;
+            color: white;
+            line-height: 10px;
+            font-size: x-large;
+            font-weight: 900;
+            background: black;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            position: sticky;
+            text-decoration: none;
+        }
+        /*        
+        .Nav a {
+        }*/
+        
+        .Nav img {
+            max-width: 200px;
+        }
+        
+        .Ul {
+            list-style: none;
+        }
+        
+        .Ul li {
+            padding: 10px;
+            display: inline-block;
+            font-variant: small-caps;
+        }
+        
+        .Body {
+            /*position: absolute;*/
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr;
+            height: 100vh;
+            /*transform: translate(50%, 50%);*/
+        }
+        
+        .dContanier {
+            /*display: flex;*/
+            /*height: 300px;
+            width: 300px;*/
+            /*margin-left: 10px;*/
+            margin-top: 200px;
+            margin-left: 15px;
+            transform: translateX(100%);
+        }
+        
+        .dContanier img {
+            background-image: linear-gradient(white, #eee);
+            width: 300px;
+            height: 200px;
+            border: 1px solid;
+        }
+        
+        .dContanier p {
+            width: 300px;
+            /*height: 100px;*/
+            text-align: center;
+            line-height: 1em;
+            color: white;
+            background-color: black;
+            padding: 5px;
+            font-weight: 500;
+        }
+        
+        .DContanier {
+            display: grid;
+            grid-template-columns: 20% 60% 20%;
+            grid-template-rows: 1fr;
+            width: 100%;
+            padding: 15px;
+        }
+        
+        .DContanier img,
+        .DContanier button {
+            width: 300px;
+            height: inherit;
+        }
+        
+        .Section-one {
+            display: flex;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            gap: 2em;
+            margin: 40px auto;
+        }
+        
+        .Section-one button {
+            color: white;
+            padding: 1em;
+            background-color: black;
+            border-radius: 15em;
+        }
+        
+        .Section-two {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 200px;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: url('https://clinika.modeltheme.com/wp-content/uploads/2020/09/Clinika-Title_benefit.png') linear-gradient(#eee, white);
+        }
+        
+        .sectionThree {
+            padding: 0px;
+            display: grid;
+            grid-template-rows: repeat(3, 0.5fr);
+            /*gap: 3em;*/
+            height: 80vh;
+            grid-template-columns: 1fr;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0px;
+            text-align: center;
+            background-position: center;
+            background: url('https://clinika.modeltheme.com/wp-content/uploads/2020/09/Clinika-Title_members-768x134.png') no-repeat center;
+        }
+        
+        .section_four {
+            /*display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);*/
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            text-align: center;
+            height: 50vh;
+            width: 100%;
+            justify-content: center;
+            align-content: center;
+            color: white;
+            background: url("https://clinika.modeltheme.com/wp-content/uploads/2020/09/Clinika-Subscribe_bg-scaled.jpg?id=21425") center;
+        }
+        
+        .section_four input {
+            padding: 1%;
+            border: none;
+            border-radius: 30px;
+            width: 500px;
+        }
+        
+        .section_four button {
+            padding: 1%;
+            border: none;
+            transform: translateX(-100%);
+            border-radius: 30px;
+            background-color: blue;
+            color: white;
+        }
+        
+        .team div {
+            display: inline-block;
+            margin-left: 3%;
+        }
+        
+        .td:hover #contacts {
+            visibility: visible;
+        }
+        
+        .team img {
+            max-width: 200px;
+            display: inline-block;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        #contacts {
+            background: #eee;
+            /*border-radius: 50%;*/
+            padding: 1em;
+            transform: translateY(300%);
+            visibility: hidden;
+        }
+        
+        .Side {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            /*width: 500px;*/
+            gap: 2em;
+        }
+        
+        .Bc {
+            width: auto;
+            height: auto;
+            border-radius: 50%;
+            position: relative;
+            /*background-image: url('https://clinika.modeltheme.com/wp-content/uploads/2020/09/Clinika-bebeftis-image-1-768x801.png');*/
+        }
+        /*.Sc {
+            position: absolute;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            background-image: url('https://clinika.modeltheme.com/wp-content/uploads/2020/09/Clinika-bebeftis-image-1-768x801.png');
+        }*/
+        
+        .Doctors {
+            /*border: black 1px solid;*/
+            /*display: grid;
+            grid-template-columns: 1fr 5fr 1fr;*/
+            display: flex;
+            gap: 1em;
+            width: 80%;
+            margin: 20px auto;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .Doctors img,
+        .Docs img {
+            max-width: 200px;
+        }
+        
+        .Doctors button {
+            /*height: 80%;*/
+            padding: 1%;
+            width: 200px;
+            color: white;
+            background-color: black;
+            border-radius: 15px;
+            /*opacity: 0.8;*/
+        }
+        
+        .Form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            flex-direction: column;
+            position: relative;
+            /*column-gap: 50vw;*/
+            margin: 100px auto;
+            /*transform: translateX(100vw);*/
+            /*overflow-x: hidden;*/
+        }
+        
+        .Form input,
+        .Form button,
+        .Form input:checked {
+            padding: 15px;
+            /*float: left;*/
+            justify-content: left;
+            margin-bottom: 5px;
+            border: none;
+            border-bottom: 1px solid;
+        }
+        
+        .Form button {
+            border-radius: 10px;
+            color: white;
+            background-color: black;
+        }
+        
+        #S1 {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            /*transform: translateX(400vw);*/
+        }
+        
+        .Docs {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1em;
+            /*width: 25%;*/
+            height: auto;
+            margin: 20px;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        
+        .Docs:first-child {
+            display: none;
+        }
+        
+        .Docs a {
+            text-decoration: none;
+        }
+        
+        #hide {
+            display: none;
+            visibility: hidden;
+        }
+        
+        .pa,
+        .Dcard {
+            /*border: black 1px solid;*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        #Suc {
+            background-color: green;
+            color: white;
+            font-weight: 400;
+            text-align: center;
+            padding: 15px;
+            position: absolute;
+            transform: translate(500%, -500%);
+            animation: update 3s 1s 1 ease forwards;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .pa:hover #case {
+            display: block;
+        }
+        
+        #case {
+            display: none;
+        }
+        
+        a div,
+        a div:active,
+        a div:visited {
+            text-decoration: none;
+            color: black;
+        }
+        
+        #Close {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            padding: 5px;
+        }
+        
+        .overlay {
+            height: 100%;
+            width: 100%;
+            display: block;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black with a little bit see-through */
+        }
+        
+        .overlay-closed {
+            height: 100%;
+            width: 100%;
+            display: none;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.9);
+            /* Black with a little bit see-through */
+        }
+        /* The content */
+        
+        .overlay-content {
+            position: relative;
+            top: 46%;
+            width: 80%;
+            text-align: center;
+            margin-top: 30px;
+            margin: auto;
+        }
+        /* Close button */
+        
+        .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+            cursor: pointer;
+            color: white;
+        }
+        
+        .overlay .closebtn:hover {
+            color: #ccc;
+        }
+        /* Style the search field */
+        
+        .overlay input[type=text] {
+            padding: 15px;
+            font-size: 17px;
+            border: none;
+            float: left;
+            width: 80%;
+            background: white;
+        }
+        
+        .overlay input[type=text]:hover {
+            background: #f1f1f1;
+        }
+        /* Style the submit button */
+        
+        .overlay button {
+            float: left;
+            width: 20%;
+            padding: 15px;
+            background: #ddd;
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .overlay button:hover {
+            background: #bbb;
+        }
+        
+        .Icons {
+            max-width: 70px;
+        }
+        
+        .Services {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        header {
+            background-image: url("https://clinika.modeltheme.com/wp-content/uploads/2020/11/breadcrumbs.jpg");
+            text-align: center;
+            color: white;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        header h1 {
+            /*font-size: xx-large;*/
+            font-weight: bolder;
+        }
+        
+        .wave {
+            transform: translateY(-100%);
+            width: 100vw;
+            /*align-self: center;*/
+        }
+        
+        .Contacts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 90px;
+        }
+        
+        #ConForm {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            /*height: 500px;*/
+            width: 80%;
+            gap: 1em;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        #ConForm img {
+            max-width: 200px;
+            transform: translateY(50%);
+        }
+        
+        .Cons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 1em;
+        }
+        
+        .pieac {
+            display: grid;
+            grid-template-columns: 0.5fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0px;
+        }
+        
+        .pieac img {
+            max-width: 40px;
+            background-color: turquoise;
+            border-radius: 50%;
+        }
+        
+        #Ch1 {
+            font-weight: 900;
+            margin-top: 20px;
+        }
+        
+        #ConForm input,
+        #ConForm textarea {
+            padding: 10px;
+            border-radius: 15px;
+            border: 1px solid;
+            width: 70%;
+            margin-bottom: 20px;
+        }
+        
+        .Serv {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: space-evenly;
+            align-items: center;
+            width: 80%;
+            margin: auto;
+            gap: 1em;
+        }
+        
+        .Scard {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10%;
+            row-gap: 1em;
+            width: 400px;
+            box-shadow: 0px 0px 20px rgb(0 0 0 / 7%);
+        }
+        
+        .Scard img {
+            max-width: 100px;
+        }
+        
+        .Scard p {
+            opacity: 0.7;
+        }
+        
+        #Footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-around;
+            align-items: flex-end;
+            background-repeat: no-repeat;
+            background-position: top;
+            background-size: cover;
+            background-image: url("https://clinika.modeltheme.com/wp-content/uploads/2020/09/Clinika-footer2-scaled.jpg");
+            color: white;
+            margin-top: 25vh;
+            height: 60vh;
+        }
+        
+        #uls {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            justify-content: center;
+            align-items: center;
+            margin-left: 200px;
+            border-right: white 1px solid;
+        }
+        
+        #uls ul {
+            list-style: none;
+            margin: auto;
+        }
+        
+        #Sub {
+            margin-left: 3em;
+        }
+        
+        #Sub input {
+            padding: 15px;
+            width: 400px;
+            border-radius: 25px;
+            border: none;
+        }
+        
+        #Sub button {
+            background-color: #006BA6;
+            color: white;
+            transform: translateX(-100%);
+            /*margin-right: 6px;*/
+            border: none;
+            padding: 15px;
+            border-radius: 25px;
+            height: inherit;
+        }
+        
+        #uls ul li {
+            padding: 5px;
+        }
+        
+        #fimg {
+            width: 100vw;
+            transform: translateY(-100%);
+        }
+        
+        .Next {
+            padding: 5px;
+            border: none;
+            /*margin: 100px auto;
+            position: absolute;*/
+            /*float: right;*/
+        }
+        
+        #Corona {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1em;
+            /*grid-template-columns: 1fr;*/
+            margin: 100px auto;
+        }
+        
+        #vCon {
+            display: grid;
+            justify-content: space-around;
+            align-items: center;
+            grid-template-columns: 1fr 1fr;
+            gap: 1em;
+            padding: 0%;
+            width: 80%;
+        }
+        
+        .vac {
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        
+        .vac,
+        #vCon div h2 {
+            border: 1px solid;
+            border-radius: 15px;
+            /*padding: 15px;*/
+        }
+        
+        .row {
+            display: grid;
+            justify-content: space-around;
+            align-items: center;
+            grid-template-columns: 1fr 1fr;
+            padding: 15px;
+            border-bottom: 1px solid;
+            text-align: center;
+            line-height: 1.5;
+        }
+        
+        #vCon div h2 {
+            color: white;
+            padding: 15px;
+            background-color: #006ba6;
+            font-weight: 700;
+            margin: 0px;
+            width: inherit;
+            text-align: center;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+        
+        .row:last-child {
+            border-bottom: none;
+        }
+        /*.row::first-child {
+            opacity: 0.5;
+            color: red;
+        }
+        */
+        
+        #vCon div,
+        #vCon div h2,
+        .vac {
+            border-collapse: collapse;
+            border: none;
+            width: auto;
+        }
+        
+        @keyframes bgcolorchange {
+            0% {
+                background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.qrtfdU3GdKh3U-wl_O1EpwHaE_%26pid%3DApi&f=1');
+            }
+            50% {
+                background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.XQO8JjENykLWoYPLmL1C6wHaDd%26pid%3DApi&f=1');
+            }
+            100% {
+                background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.F4iIZ05d-SDUlxxTNaOJEAHaEK%26pid%3DApi&f=1');
+            }
+        }
+        
+        .swip {
+            animation: swip 1 ease 0s 1s forwards;
+        }
+        
+        .Xswip {
+            animation: reswip 1 ease 0s 1s forwards;
+        }
+        
+        @keyframes swip {
+            100% {
+                transform: translateX(100vw);
+            }
+        }
+        
+        @keyframes reswip {
+            100% {
+                transform: translateX(-100vw);
+            }
+        }
+        
+        @keyframes update {
+            0% {
+                transform: translate(500%, -500%);
+            }
+            50% {
+                transform: translate(500%, -50%);
+            }
+            100% {
+                transform: translate(500%, -500%);
+            }
+        }
